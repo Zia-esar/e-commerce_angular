@@ -3,32 +3,37 @@
         <button class="btn btn-success">New Recipe</button>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="col-xs-12">
-        <a href="#" class="list-group-item clearfix" *ngFor="let recipe ofs recipies">
-            <div class="pull-left">
+        <a href="#" 
+        class="list-group-item clearfix" 
+        *ngFor="let recipe of recipies">
+            <div class="float-left">
                 <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-                <p class="list-group-item-text">{{recipies.description}}</p>
+                <p class="list-group-item-text">{{recipe.description}}</p>
             </div>
-            <span class="pull-right">
+            <span class="float-right">
                 <img      
                 [src]="recipe.imagePath"
                 alt="{{recipe.name}}" 
-                class="img-responsive" style="max-height: 50px;">
+                class="img-responsive" 
+                style="max-height: 50px;">
             </span>
         </a>
         <!-- <a href="#" 
         class="list-group-item list-group-item-action active" 
-        *ngfor="let recipe of recipies">
-            <div class="pull-left">
+        *ngFor="let recipe of recipies">
+            <div class="float-left">
                 <h4 class="list-group-item-heading">{{recipe.name}}</h4>
                 <p class="list-group-item-text">{{recipe.description}}</p>
             </div>
-            <span class="pull-right">
+            <span class="float-right">
                 <img      
                 [src]="recipe.imagePath"
                 alt="{{recipe.name}}" 
-                class="img-responsive" style="max-height: 50px;">
+                class="img-responsive" 
+                style="max-height: 50px;"/>
             </span>
         </a> -->
         <app-recipe-item></app-recipe-item>

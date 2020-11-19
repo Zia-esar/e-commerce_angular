@@ -8,7 +8,14 @@ import {Recipe} from '../recipe.model';
 export class RecipeListComponent {
 
   recipies: Recipe[] = [
-    new Recipe('test', 'a test recipe, how was the taste !!', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.delish.com%2Fcooking%2Frecipe-ideas%2Frecipes%2Fa55760%2Fhealthy-chicken-casserole-recipe%2F&psig=AOvVaw2-sQqBEHh3A_pLaZn0EXKn&ust=1605598280652000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCf8vrFhu0CFQAAAAAdAAAAABAE')
+    new Recipe('test', 
+    'a test recipe',
+    'https://www.fannetasticfood.com/wp-content/uploads/2019/11/savory-sweet-potato-casserole-5-406x406.jpg',  
+    ),
+    new Recipe('test', 
+    'a test recipe',
+    'https://www.fannetasticfood.com/wp-content/uploads/2019/11/savory-sweet-potato-casserole-5-406x406.jpg',  
+    ),
   ];
 
 }
